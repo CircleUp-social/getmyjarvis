@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jarvis AI Assistant - Pricing</title>
+  <link rel="icon" href="../assets/favicon.png" type="image/png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Cloudflare Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Apply Google Font */
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    /* Custom loading animation */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in {
+      animation: fadeIn 0.8s ease-out;
+    }
+
+    .pricing-card {
+      transition: transform 0.3s ease;
+    }
+
+    .pricing-card:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-purple-600 to-indigo-600 py-20 text-center text-white">
+    <h1 class="text-5xl font-bold mb-4 animate-fade-in">Jarvis AI Assistant</h1>
+    <p class="text-xl opacity-90 animate-fade-in">Revolutionize your productivity with our AI-powered assistant.</p>
+  </header>
+
+  <!-- Pricing Section -->
+  <section class="container mx-auto px-6 py-16">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Enterprise Plan -->
+      <div class="bg-white rounded-xl shadow-lg p-8 pricing-card animate-fade-in">
+        <h2 class="text-2xl font-bold text-purple-600 mb-4">Basic</h2>
+        <p class="text-4xl font-bold mb-6">J.A.R.V.I.S</p>
+        <ul class="space-y-3 mb-8">
+          <li class="flex items-center text-gray-600">
+            <i class="fas fa-check text-purple-600 mr-2"></i> AI-Based Task Automation
+          </li>
+          <li class="flex items-center text-gray-600">
+            <i class="fas fa-check text-purple-600 mr-2"></i> Email OTP Detection and Alerts
+          </li>
+          <li class="flex items-center text-gray-600">
+            <i class="fas fa-check text-purple-600 mr-2"></i> Generate and Write Python Scripts
+          </li>
+          <li class="flex items-center text-gray-600">
+            <i class="fas fa-check text-purple-600 mr-2"></i> Window and Application Management
+          </li>
+          <li class="flex items-center text-gray-600">
+            <i class="fas fa-check text-purple-600 mr-2"></i> Speech Recognition and Feedback
+          </li>
+          <li class="flex items-center text-gray-600">
+            <i class="fas fa-check text-purple-600 mr-2"></i> Set Custom Alarms and Reminders
+          </li>
+          <li class="flex items-center text-gray-600">
+            <i class="fas fa-check text-purple-600 mr-2"></i> Real-Time Internet Speed Monitoring
+          </li>
+          <li class="flex items-center text-gray-600">
+            <i class="fas fa-check text-purple-600 mr-2"></i> Generate and Search for Images using AI
+          </li>
+          <li class="flex items-center text-gray-600">
+            <i class="fas fa-check text-purple-600 mr-2"></i> Check and Control System Applications (Open/Close)
+          </li>
+          <li class="flex items-center text-gray-600">
+            <i class="fas fa-check text-purple-600 mr-2"></i> Command-Based Web Searching and YouTube Integration
+          </li>
+          <li class="flex items-center text-gray-600">
+            <i class="fas fa-check text-purple-600 mr-2"></i> Personalized AI Responses using Cohere
+          </li>
+        </ul>
+        <a href="#" class="block w-full bg-purple-600 text-white text-center py-3 rounded-lg hover:bg-purple-700 transition-colors">
+          Download For Free
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center py-6">
+    <p>&copy; 2025 Jarvis AI. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

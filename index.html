@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jarvis AI - Smart AI Assistant for automation, productivity & more.">
+    <meta name="keywords" content="AI assistant, automation, Jarvis AI, voice assistant, chatbot">
+    <meta name="author" content="Kaif Ansari">
+    <meta property="og:title" content="Jarvis AI - Smart AI Assistant">
+    <meta property="og:description" content="Boost productivity with AI automation.">
+    <meta property="og:image" content="https://getmyjarvisai.circleup.top/preview.jpg">
+    <meta property="og:url" content="https://getmyjarvisai.circleup.top">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Jarvis AI - The Future of AI Assistants">
+    <meta name="twitter:description" content="Revolutionizing AI-powered automation.">
+    <meta name="twitter:image" content="https://getmyjarvisai.circleup.top/twitter-preview.jpg">
+    <link rel="icon" href="assets/favicon.png" type="image/png">
+    <link rel="canonical" href="https://getmyjarvisai.circleup.top">
+    <title>Jarvis AI - Smart AI Assistant for Productivity & Automation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+        .floating {
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(0.8); opacity: 1; }
+            100% { transform: scale(2); opacity: 0; }
+        }
+        .voice-pulse {
+            animation: pulse 1.5s infinite;
+        }
+        @keyframes glow {
+            0% { box-shadow: 0 0 10px rgba(59, 130, 246, 0.7); }
+            50% { box-shadow: 0 0 20px rgba(59, 130, 246, 0.9); }
+            100% { box-shadow: 0 0 10px rgba(59, 130, 246, 0.7); }
+        }
+        .glow-effect {
+            animation: glow 2s infinite;
+        }
+        @keyframes slideIn {
+            0% { opacity: 0; transform: translateX(-50px); }
+            100% { opacity: 1; transform: translateX(0); }
+        }
+        .slide-in {
+            animation: slideIn 0.5s ease-out;
+        }
+        @keyframes neon {
+            0% { text-shadow: 0 0 5px rgba(59, 130, 246, 0.7), 0 0 10px rgba(59, 130, 246, 0.7), 0 0 20px rgba(59, 130, 246, 0.7); }
+            50% { text-shadow: 0 0 10px rgba(59, 130, 246, 0.9), 0 0 20px rgba(59, 130, 246, 0.9), 0 0 40px rgba(59, 130, 246, 0.9); }
+            100% { text-shadow: 0 0 5px rgba(59, 130, 246, 0.7), 0 0 10px rgba(59, 130, 246, 0.7), 0 0 20px rgba(59, 130, 246, 0.7); }
+        }
+        .neon-text {
+            animation: neon 3s infinite;
+        }
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .rotate {
+            animation: rotate 10s linear infinite;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 min-h-screen font-['Exo_2']">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-gradient-to-r from-black/30 to-purple-900/30 backdrop-blur-lg z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-white font-bold text-2xl flex items-center">
+                    <div class="w-8 h-8 bg-blue-500 rounded-full mr-2 glow-effect"></div>
+                    <span class="neon-text">JARVIS</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="pages/pricing.html" class="text-gray-300 hover:text-white transition-all hover:neon-text">Pricing</a>
+                    <a href="pages/features.html" class="text-gray-300 hover:text-white transition-all hover:neon-text">Features</a>
+                    <a href="pages/about.html" class="text-gray-300 hover:text-white transition-all hover:neon-text">About</a>
+                    <a href="pages/contact.html" class="text-gray-300 hover:text-white transition-all hover:neon-text">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="pt-32 pb-20 px-6">
+        <div class="container mx-auto flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 text-white space-y-8 slide-in">
+                <h1 class="text-5xl font-bold leading-tight">
+                    Next Generation
+                    <span class="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent neon-text">
+                        AI Assistant
+                    </span>
+                </h1>
+                <p class="text-xl text-gray-300">Your intelligent companion for seamless productivity and smart living</p>
+                <a href="pages/pricing.html">
+                    <button class="bg-gradient-to-r from-blue-500 to-purple-600 px-8 py-4 rounded-full text-lg font-semibold hover:scale-105 transition-transform glow-effect">
+                        Get Started
+                    </button>
+                </a>
+                
+            </div>
+            <div class="md:w-1/2 mt-12 md:mt-0 relative">
+                <div class="floating relative max-w-md mx-auto">
+                    <div class="absolute inset-0 bg-blue-500/30 blur-2xl rounded-full"></div>
+                    <div class="relative bg-gray-800/50 backdrop-blur-xl rounded-2xl p-8 shadow-2xl">
+                        <div class="h-64 flex items-center justify-center">
+                            <div class="relative">
+                                <div class="absolute inset-0 voice-pulse bg-blue-400/30 rounded-full"></div>
+                                <div class="w-32 h-32 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full flex items-center justify-center rotate">
+                                    <i class="fas fa-robot text-4xl text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="bg-gray-700/50 p-4 rounded-xl animate-pulse">
+                                <div class="h-2 bg-gray-600 rounded-full w-3/4 mb-2"></div>
+                                <div class="h-2 bg-gray-600 rounded-full w-1/2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="py-20 bg-black/20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-white text-center mb-16 neon-text">Features</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature Cards -->
+                <div class="bg-gray-800/50 backdrop-blur-lg p-8 rounded-2xl hover:transform hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl">
+                    <div class="w-16 h-16 bg-blue-500 rounded-xl flex items-center justify-center mb-6 glow-effect">
+                        <i class="fas fa-brain text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-4">Natural Language Processing</h3>
+                    <p class="text-gray-400">Advanced understanding of human language with contextual awareness</p>
+                </div>
+                
+                <div class="bg-gray-800/50 backdrop-blur-lg p-8 rounded-2xl hover:transform hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl">
+                    <div class="w-16 h-16 bg-purple-500 rounded-xl flex items-center justify-center mb-6 glow-effect">
+                        <i class="fas fa-home text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-4">Smart Home Control</h3>
+                    <p class="text-gray-400">Seamless integration with IoT devices and home automation</p>
+                </div>
+
+                <div class="bg-gray-800/50 backdrop-blur-lg p-8 rounded-2xl hover:transform hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl">
+                    <div class="w-16 h-16 bg-blue-400 rounded-xl flex items-center justify-center mb-6 glow-effect">
+                        <i class="fas fa-lock text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-4">Military-grade Security</h3>
+                    <p class="text-gray-400">End-to-end encryption and privacy-focused architecture</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Interaction Demo Section -->
+    <div class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="bg-gray-800/50 backdrop-blur-lg rounded-2xl p-8 shadow-2xl">
+                <div class="flex flex-col md:flex-row gap-8">
+                    <div class="md:w-1/2 space-y-6">
+                        <h2 class="text-3xl font-bold text-white neon-text">Interactive Experience</h2>
+                        <p class="text-gray-400">Experience the future of human-AI interaction with our natural interface</p>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center glow-effect">
+                                    <i class="fas fa-microphone text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-semibold">Voice Commands</h4>
+                                    <p class="text-gray-400 text-sm">Natural speech recognition</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center glow-effect">
+                                    <i class="fas fa-calendar-alt text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-semibold">Task Scheduling</h4>
+                                    <p class="text-gray-400 text-sm">Automated reminders and calendar management</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-blue-400 rounded-lg flex items-center justify-center glow-effect">
+                                    <i class="fas fa-lightbulb text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-semibold">Smart Suggestions</h4>
+                                    <p class="text-gray-400 text-sm">Proactive recommendations based on your habits</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2">
+                        <div class="bg-gray-900/50 rounded-xl p-6 h-96">
+                            <div class="space-y-4">
+                                <!-- Chat messages -->
+                                <div class="flex justify-start">
+                                    <div class="bg-gray-800 p-4 rounded-2xl max-w-xs">
+                                        <p class="text-white">How can I assist you today?</p>
+                                    </div>
+                                </div>
+                                <div class="flex justify-end">
+                                    <div class="bg-blue-500 p-4 rounded-2xl max-w-xs">
+                                        <p class="text-white">Schedule meeting with team at 2 PM</p>
+                                    </div>
+                                </div>
+                                <div class="flex justify-start">
+                                    <div class="bg-gray-800 p-4 rounded-2xl max-w-xs">
+                                        <p class="text-white">Meeting scheduled for 2 PM. Would you like to add an agenda?</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-black/30 py-12">
+        <div class="container mx-auto px-6 text-center">
+            <div class="text-white text-2xl font-bold mb-8 neon-text">JARVIS Inspired By Iron Man</div>
+            <div class="flex justify-center space-x-6 mb-8">
+                <a href="#" class="text-gray-400 hover:text-white transition-colors hover:neon-text">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors hover:neon-text">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors hover:neon-text">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <p class="text-gray-400">&copy; 2025 JARVIS AI. All rights reserved.</p>
+        </div>
+    </footer>
+    <audio id="welcomeAudio" src="assets/sound/welcome.mp3" preload="auto"></audio>
+
+    <script>
+        window.onload = function() {
+            var audio = document.getElementById('welcomeAudio');
+            setTimeout(function() {
+                audio.play();
+            }, 100); // 100ms delay to make sure audio file is ready
+        }
+    </script>
+</body>
+
+</html>

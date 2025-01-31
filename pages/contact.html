@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Kaif - Creator of Jarvis AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="../assets/favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .animate-float {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        .contact-card:hover .contact-icon {
+            transform: rotate(360deg);
+            background: linear-gradient(45deg, #6366f1, #8b5cf6);
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-gray-900 to-indigo-900 min-h-screen font-[Inter] text-gray-100">
+    <!-- Header Section -->
+    <header class="container mx-auto px-6 py-16 text-center">
+        <div class="animate-float">
+            <div class="w-32 h-32 rounded-full bg-indigo-800 mx-auto mb-6 flex items-center justify-center">
+                <i class="fas fa-comments text-4xl text-indigo-400"></i>
+            </div>
+            <h1 class="text-5xl font-bold mb-4 bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
+                Let's Connect
+            </h1>
+            <p class="text-xl text-indigo-200">Have questions, feedback, or collaboration ideas? Reach out!</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+        <div class="grid lg:grid-cols-2 gap-12">
+            <!-- Contact Form -->
+            <div class="glass-effect rounded-2xl p-8 lg:p-12">
+                <form class="space-y-6">
+                    <div>
+                        <label class="block text-indigo-200 mb-2">Your Name</label>
+                        <input type="text" 
+                               class="w-full bg-indigo-900/50 border border-indigo-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-purple-400 transition-all">
+                    </div>
+                    
+                    <div>
+                        <label class="block text-indigo-200 mb-2">Email Address</label>
+                        <input type="email" 
+                               class="w-full bg-indigo-900/50 border border-indigo-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-purple-400 transition-all">
+                    </div>
+
+                    <div>
+                        <label class="block text-indigo-200 mb-2">Message</label>
+                        <textarea 
+                            class="w-full bg-indigo-900/50 border border-indigo-700 rounded-lg px-4 py-3 h-32 focus:outline-none focus:ring-2 focus:ring-purple-400 transition-all"></textarea>
+                    </div>
+
+                    <button class="w-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-3 rounded-lg hover:from-purple-700 hover:to-indigo-700 transition-all">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="space-y-8">
+                <!-- Email Card -->
+                <div class="glass-effect rounded-2xl p-8 contact-card transition-all duration-300">
+                    <div class="contact-icon w-16 h-16 rounded-2xl bg-indigo-800 flex items-center justify-center mb-6 transition-all duration-500">
+                        <i class="fas fa-envelope text-3xl text-indigo-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">💌 Direct Email</h3>
+                    <p class="text-indigo-300 mb-4">For business inquiries and project discussions:</p>
+                    <div class="flex items-center space-x-4 bg-indigo-900/50 p-4 rounded-lg">
+                        <i class="fas fa-at text-indigo-400"></i>
+                        <span id="email" class="text-indigo-200 hover:text-purple-400 cursor-pointer transition-colors">
+                            kaif.ansari.infosec@gmail.com
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Social Media -->
+                <div class="glass-effect rounded-2xl p-8 contact-card transition-all duration-300">
+                    <div class="contact-icon w-16 h-16 rounded-2xl bg-indigo-800 flex items-center justify-center mb-6 transition-all duration-500">
+                        <i class="fas fa-hashtag text-3xl text-indigo-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">📱 Social Connections</h3>
+                    <div class="space-y-4">
+                        <a href="#" class="flex items-center space-x-4 group">
+                            <i class="fab fa-linkedin text-2xl text-indigo-400 group-hover:text-blue-400 transition-colors"></i>
+                            <span class="text-indigo-200 group-hover:text-blue-400 transition-colors">LinkedIn Profile</span>
+                        </a>
+                        <a href="https://twitter.com/EthicalKai" target="_blank" class="flex items-center space-x-4 group">
+                            <i class="fab fa-twitter text-2xl text-indigo-400 group-hover:text-blue-400 transition-colors"></i>
+                            <span class="text-indigo-200 group-hover:text-blue-400 transition-colors">Twitter Profile</span>
+                        </a>
+                        <a href="#" class="flex items-center space-x-4 group">
+                            <i class="fab fa-github text-2xl text-indigo-400 group-hover:text-purple-400 transition-colors"></i>
+                            <span class="text-indigo-200 group-hover:text-purple-400 transition-colors">GitHub Profile</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="container mx-auto px-6 py-12 text-center text-indigo-300">
+        <p>© 2025 GetJarvisai.in All rights reserved.</p>
+    </footer>
+
+    <!-- Email Copy Script -->
+    <script>
+        document.getElementById('email').addEventListener('click', function() {
+            const email = 'kaif.ansari.infosec@gmail.com';
+            navigator.clipboard.writeText(email).then(() => {
+                const originalText = this.innerText;
+                this.innerText = 'Email copied to clipboard!';
+                setTimeout(() => {
+                    this.innerText = originalText;
+                }, 2000);
+            });
+        });
+    </script>
+</body>
+</html>

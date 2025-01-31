@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jarvis AI - Features</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="../assets/favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .animate-float {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .feature-card:hover .feature-icon {
+            transform: rotate(360deg);
+            background: linear-gradient(45deg, #6366f1, #8b5cf6);
+        }
+
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-gray-900 to-indigo-900 min-h-screen font-[Inter] text-gray-100">
+    <!-- Header Section -->
+    <header class="container mx-auto px-6 py-16 text-center">
+        <div class="animate-float">
+            <i class="fas fa-robot text-6xl text-indigo-400 mb-6"></i>
+            <h1 class="text-5xl font-bold mb-4 bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
+                Jarvis AI Features
+            </h1>
+        </div>
+        <p class="text-xl text-indigo-200 max-w-2xl mx-auto">
+            Experience the future of AI assistance with Jarvis's advanced capabilities
+        </p>
+    </header>
+
+    <!-- Features Grid -->
+    <main class="container mx-auto px-6 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- AI-Powered Text Responses -->
+            <div class="glass-effect rounded-xl p-8 hover:shadow-2xl transition-all duration-300 feature-card">
+                <div class="feature-icon w-16 h-16 rounded-2xl bg-indigo-800 flex items-center justify-center mb-6 transition-all duration-500">
+                    <i class="fas fa-comment-dots text-3xl text-indigo-400"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">🤖 AI-Powered Responses</h3>
+                <p class="text-indigo-200 mb-4">Real-time intelligent answers using Cohere API</p>
+                <div class="glass-effect p-4 rounded-lg">
+                    <p class="text-sm font-mono text-indigo-300">
+                        <span class="text-purple-400">You:</span> "Hey Jarvis, what's the weather?"<br>
+                        <span class="text-green-400">Jarvis:</span> "Sunny, 25°C with clear skies."
+                    </div>
+                </div>
+            </div>
+
+            <!-- Personalization -->
+            <div class="glass-effect rounded-xl p-8 hover:shadow-2xl transition-all duration-300 feature-card">
+                <div class="feature-icon w-16 h-16 rounded-2xl bg-indigo-800 flex items-center justify-center mb-6 transition-all duration-500">
+                    <i class="fas fa-user-astronaut text-3xl text-indigo-400"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">👋 Context Awareness</h3>
+                <p class="text-indigo-200 mb-4">Personalized interactions & memory retention</p>
+                <div class="glass-effect p-4 rounded-lg">
+                    <p class="text-sm font-mono text-indigo-300">
+                        "Good morning, Kaif! Your 9 AM meeting starts in 30 minutes"
+                    </div>
+                </div>
+            </div>
+
+            <!-- Task Scheduling -->
+            <div class="glass-effect rounded-xl p-8 hover:shadow-2xl transition-all duration-300 feature-card">
+                <div class="feature-icon w-16 h-16 rounded-2xl bg-indigo-800 flex items-center justify-center mb-6 transition-all duration-500">
+                    <i class="fas fa-calendar-alt text-3xl text-indigo-400"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">📅 Smart Scheduling</h3>
+                <p class="text-indigo-200 mb-4">Automatic reminders & task management</p>
+                <div class="glass-effect p-4 rounded-lg">
+                    <p class="text-sm font-mono text-indigo-300">
+                        "Reminder set: Check emails in 30 minutes"
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dynamic Commands -->
+            <div class="glass-effect rounded-xl p-8 hover:shadow-2xl transition-all duration-300 feature-card">
+                <div class="feature-icon w-16 h-16 rounded-2xl bg-indigo-800 flex items-center justify-center mb-6 transition-all duration-500">
+                    <i class="fas fa-terminal text-3xl text-indigo-400"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">📝 Custom Commands</h3>
+                <p class="text-indigo-200 mb-4">Create personalized voice/text commands</p>
+                <div class="glass-effect p-4 rounded-lg">
+                    <p class="text-sm font-mono text-indigo-300">
+                        "New command added: 'Open my portfolio' → launching website..."
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resume Generation -->
+            <div class="glass-effect rounded-xl p-8 hover:shadow-2xl transition-all duration-300 feature-card">
+                <div class="feature-icon w-16 h-16 rounded-2xl bg-indigo-800 flex items-center justify-center mb-6 transition-all duration-500">
+                    <i class="fas fa-file-code text-3xl text-indigo-400"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">📄 Smart Generation</h3>
+                <p class="text-indigo-200 mb-4">Resumes, scripts & document creation</p>
+                <div class="glass-effect p-4 rounded-lg">
+                    <p class="text-sm font-mono text-indigo-300">
+                        "Resume template ready - Enter your details..."
+                    </div>
+                </div>
+            </div>
+
+            <!-- Multi-Extension -->
+            <div class="glass-effect rounded-xl p-8 hover:shadow-2xl transition-all duration-300 feature-card">
+                <div class="feature-icon w-16 h-16 rounded-2xl bg-indigo-800 flex items-center justify-center mb-6 transition-all duration-500">
+                    <i class="fas fa-puzzle-piece text-3xl text-indigo-400"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">⚙️ Extended Capabilities</h3>
+                <p class="text-indigo-200 mb-4">File handling & system integration</p>
+                <div class="glass-effect p-4 rounded-lg">
+                    <p class="text-sm font-mono text-indigo-300">
+                        "Accessing documents → 3 new files detected"
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="container mx-auto px-6 py-12 text-center text-indigo-300">
+        <p>© 2025 Jarvis AI. All rights reserved.</p>
+    </footer>
+</body>
+</html>
